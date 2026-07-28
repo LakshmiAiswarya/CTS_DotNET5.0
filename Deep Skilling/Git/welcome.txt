@@ -1,1 +1,2 @@
 Welcome to the version control
+GitHub is used for deployment of projects and other works. 
