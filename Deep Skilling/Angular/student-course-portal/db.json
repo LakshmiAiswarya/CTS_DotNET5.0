@@ -1,0 +1,19 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "name": "Angular",
+            "duration": "40 Hours"
+        },
+        {
+            "id": 2,
+            "name": ".NET Core",
+            "duration": "50 Hours"
+        },
+        {
+            "id": 3,
+            "name": "SQL",
+            "duration": "30 Hours"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+<h1>Welcome to Student Course Portal</h1>
+
+<p>
+    This portal helps students browse courses, enroll in subjects,
+    and manage their academic profile.
+</p>
+
+<h2>Dashboard</h2>
+
+<p>Courses Available: 12</p>
+
+<p>Enrolled: 3</p>
+
+<p>GPA: 3.8</p>
+
+
+<h3>Data Binding Demo</h3>
+
+<p>
+    Welcome {{studentName}}
+</p>
+
+<p>
+    Current Course: {{course}}
+</p>
+
+
+<input [(ngModel)]="studentName">
+
+<br><br>
+
+<button (click)="showMessage()">
+    Click Me
+</button>
+
+<p>{{message}}</p>
+
+
+<hr>
+
+
+<app-student-card [studentName]="studentName" [course]="course" (studentSelected)="message=$event">
+</app-student-card>
+
+
+<hr>
+
+<app-student-registration></app-student-registration>
+
+
+<hr>
+
+<app-reactive-registration></app-reactive-registration>

@@ -1,0 +1,47 @@
+<h2>Student Registration</h2>
+
+<form #studentForm="ngForm" (ngSubmit)="registerStudent()">
+
+    <label>Name:</label>
+    <input type="text" name="name" [(ngModel)]="student.name" required>
+
+    <br><br>
+
+
+    <label>Email:</label>
+    <input type="email" name="email" [(ngModel)]="student.email" required>
+
+    <br><br>
+
+
+    <label>Course:</label>
+
+    <select name="course" [(ngModel)]="student.course">
+
+        <option>Angular</option>
+        <option>.NET Core</option>
+        <option>SQL</option>
+
+    </select>
+
+    <br><br>
+
+
+    <button type="submit">
+        Register
+    </button>
+
+</form>
+
+
+<div *ngIf="submitted">
+
+    <h3>Registration Successful</h3>
+
+    <p>Name: {{student.name}}</p>
+
+    <p>Email: {{student.email}}</p>
+
+    <p>Course: {{student.course}}</p>
+
+</div>
